@@ -1,0 +1,12 @@
+.route-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+    li {
+        margin: 0rem 1rem;
+        a {
+            text-decoration: none;
+        }
+    }
+}
