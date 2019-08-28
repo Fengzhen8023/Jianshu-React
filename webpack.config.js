@@ -6,7 +6,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.[hash:4].js', //添加hash可以防止文件缓存,每次都会生成4位hash串
-        path: path.resolve('dist')
+        path: path.resolve('dist'),
+        publicPath: '/'
     },
     devServer: {
         contentBase: "./dist",      // 本地服务器所加载的页面所在的目录
