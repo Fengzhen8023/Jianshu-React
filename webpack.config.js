@@ -18,7 +18,12 @@ module.exports = {
     },
     resolve: {
         // 引入文件不写后缀名的时候，通过以下顺序尝试引入文件
-        extensions: [".js", ".jsx"],   
+        extensions: [".js", ".jsx"], 
+        alias: {
+            components: path.resolve(__dirname, "src/components"),
+            views: path.resolve(__dirname, "src/views"),
+            images: path.resolve(__dirname, "src/asset/images")
+        }  
     },
     plugins: [
         new HtmlWebpackPlugin({
