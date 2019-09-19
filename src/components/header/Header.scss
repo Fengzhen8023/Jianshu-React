@@ -5,8 +5,12 @@ $header-height: 3.5rem;
 .header-nav {
     width: 100%;
     height: $header-height;
-    border-bottom: 1px solid #ccc;
     display: flex;
+    top: 0;
+    position: fixed;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    z-index: 999;
 
     .left-part {
         width: 18%;
