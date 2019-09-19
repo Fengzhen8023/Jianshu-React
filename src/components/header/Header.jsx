@@ -2,9 +2,9 @@ import React from 'react'
 import './Header.scss'
 import { Icon } from 'antd'
 
-const logo = require('images/jianshu-logo.png');
-const face = require('images/face-photo.png');
-const beat = require('images/beat.png');
+const logo = require('images/jianshu-logo.png')
+const face = require('images/face-photo.png')
+const beat = require('images/beat.png')
 
 class Header extends React.Component {
     constructor(props) {
@@ -57,6 +57,40 @@ class Header extends React.Component {
                     <div className="photo">
                         <img src={face} alt="face"/>
                         <Icon type="caret-down" />
+                        <ul className="more-option">
+                            <li>
+                                <Icon type="smile" theme="filled" />
+                                <span>我的主页</span>
+                            </li>
+                            <li>
+                                <Icon type="star" theme="filled" />
+                                <span>收藏的文章</span>
+                            </li>
+                            <li>
+                                <Icon type="heart" theme="filled" />
+                                <span>喜欢的文章</span>
+                            </li>
+                            <li>
+                                <Icon type="pay-circle" theme="filled" />
+                                <span>已购内容</span>
+                            </li>
+                            <li>
+                                <Icon type="layout" theme="filled" />
+                                <span>我的钱包</span>
+                            </li>
+                            <li>
+                                <Icon type="setting" theme="filled" />
+                                <span>设置</span>
+                            </li>
+                            <li>
+                                <Icon type="message" theme="filled" />
+                                <span>帮助与反馈</span>
+                            </li>
+                            <li>
+                                <Icon type="lock" theme="filled" />
+                                <span>退出</span>
+                            </li>
+                        </ul>
                     </div>
                     <div className="write-article">
                         <Icon type="audio" className="write-article-icon" />
