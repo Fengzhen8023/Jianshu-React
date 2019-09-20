@@ -1,0 +1,85 @@
+.recommend {
+    width: 100%;
+
+    .recommend-top-part {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #666;
+
+        .change-batch {
+            cursor: pointer;
+
+            .change-batch-icon {
+                margin-right: 0.5rem;
+                position: relative;
+                top: 0.1rem;
+            }
+
+            .change-batch-active {
+                svg {
+                    transform: rotate(720deg);
+                    transition: transform 1s ease;
+                }
+            }
+        }
+
+        .change-batch:hover {
+            color: #333;
+        }
+    }
+
+    .recommend-content-part {
+        .author-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+
+            .author-left {
+                display: flex;
+                align-items: center;
+
+                .author-info {
+                    .author-name {
+                        color: #000;
+                    }
+
+                    .author-achievement {
+                        font-size: 12px;
+                        color: #888;
+                        margin-top: 0.2rem;
+                    }
+                }
+
+                img {
+                    width: 3rem;
+                    border-radius: 1.5rem;
+                    border: 1px solid #ddd;
+                    box-sizing: border-box;
+                    margin-right: 0.5rem;
+                }
+            }
+
+            .author-right {
+                .care-btn {
+                    color: #42c02e;
+                    cursor: pointer;
+                }
+            }
+        }
+    }       
+    
+    .recommend-bottom-part {
+        width: 100%;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin-top: 1rem;
+        background: rgba(200, 200, 200, 0.2);
+        box-sizing: border-box;
+        border: 1px solid #aaa;
+        border-radius: 0.1rem;
+        text-align: center;
+        cursor: pointer;
+    }
+}

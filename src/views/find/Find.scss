@@ -12,24 +12,33 @@
     .find-right-part {
         width: 30%;
         height: 100%;
-        // background: lightcoral;
+        background: #fff;
 
         .right-nav {
             padding: 0 0.2rem;
+
             img {
                 width: 100%;
+                margin-bottom: 0.2rem;
+                cursor: pointer;
+            }
+
+            .last-nav-img {
+                margin-bottom: 0rem;
             }
         }
 
         .qr-code {
             width: 100%;
             box-sizing: border-box;
-            padding: 0 1rem;
+            padding: 0.5rem 1rem;
             position: relative;
             cursor: pointer;
             display: flex;
-            margin-top: 1rem;
+            margin: 0.5rem 0; 
             align-items: center;
+            border: 1px solid #eee;
+            border-radius: 5px;
 
             .big-qr-code {
                 width: 12rem;
@@ -86,5 +95,6 @@
         .qr-code:hover .big-qr-code {
             display: block;
         }
+
     }
 }
