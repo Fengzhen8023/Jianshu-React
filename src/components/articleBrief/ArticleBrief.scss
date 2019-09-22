@@ -1,0 +1,62 @@
+$theme-color: #ea6f5a;
+
+.article-brief {
+    height: 9rem;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.8);
+
+    .article-text {
+        .article-content {
+            margin: 0.5rem 0px;
+        }
+
+        .article-info {
+            display: flex;
+
+            & > div {
+                margin-right: 1rem;
+                height: 1rem;
+                line-height: 1rem;
+                color: #999;
+
+                i {
+                    position: relative;
+                    top: 0.1rem;
+                    margin-right: 0.2rem; 
+                }
+            }
+
+            .diamond {
+                color: $theme-color;
+            }
+
+            .author-name {
+                cursor: pointer;
+            }
+
+            .author-name:hover {
+                color: #333;
+            }
+        }
+    }
+
+    .article-image {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            height: 90%;
+        }
+    }
+
+    .article-image.no-cover {
+        display: none;
+    }
+
+}

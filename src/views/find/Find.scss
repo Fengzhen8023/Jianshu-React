@@ -1,16 +1,17 @@
 .find-box {
     display: flex;
+    justify-content: space-between;
     height: 100%;
     
 
     .find-left-part{
-        width: 70%;
+        width: 68%;
         height: 100%;
-        background: skyblue;
+        // background: skyblue;
     } 
 
     .find-right-part {
-        width: 30%;
+        width: 28%;
         height: 100%;
         background: #fff;
 

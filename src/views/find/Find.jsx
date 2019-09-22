@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import RecommentAuthor from 'components/recommendAuthor/RecommendAuthor'
+import ArticleBrief from 'components/articleBrief/ArticleBrief'
 import './Find.scss'
 
 const member = require('images/member.png')
@@ -7,9 +8,25 @@ const serial = require('images/serial.png')
 const copyright = require('images/copyright.png')
 const school = require('images/school.png')
 const qrCode = require('images/qr-code.png')
-const author1 = require('images/author-face/author1.webp')
 
 
+const articleBriefInfo1 = {
+    "title": "公告：关于暂停用户发布功能，并全面清查平台内容",
+    "content": "亲爱的简书用户 「简书」因个别上传作品用户违反《中华人民共和国网络安全法》《互联网信息服务管理办法》《互联网新闻信息服务管理规定》《互联网用户公...",
+    "diamondNumber": 4697.7,
+    "likeNumber": 10989,
+    "author": "简书",
+    "image": null
+}
+
+const articleBriefInfo2 = {
+    "title": "简书一年，我找到了一份好工作",
+    "content": "这是我的亲身经历，没有虚构，虽然它听起来不像真的。 2017年11月7日 星期二 晴 说起来很惭愧，在简书写了一年的文，至今，我还是原来的我，既...",
+    "diamondNumber": 2425.8,
+    "likeNumber": 16062,
+    "author": "陌上红裙",
+    "image": "1.jpg"
+}
 
 class Find extends Component {
     constructor(props) {
@@ -22,7 +39,10 @@ class Find extends Component {
     render() {
         return (
             <div className="find-box">
-                <div className="find-left-part">left</div>
+                <div className="find-left-part">
+                    <ArticleBrief article={articleBriefInfo1} />
+                    <ArticleBrief article={articleBriefInfo2} />
+                </div>
                 <div className="find-right-part">
                     <div className="right-nav">
                         <img src={member} alt="member"/>
